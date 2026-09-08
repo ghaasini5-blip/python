@@ -1,5 +1,4 @@
-#arthimethic operations
-
+#arithmetic operations
 a = 10
 b = 3
 
@@ -87,4 +86,88 @@ print ("Eligible:" , age >= 18)
 marks = int(input("Enter your marks: "))
 
 print("Passed:", marks >= 40)
+ #Setup variables
+age = 20
+has_id = True
+is_suspended = False
 
+# 1. AND Example (Both must be True)
+if age >= 18 and has_id:
+    print("Eligible to enter the venue.")
+
+# 2. OR Example (At least one must be True)
+if age < 12 or age >= 65:
+    print("Eligible for a special discount.")
+
+# 3. NOT Example (Inverts a condition)
+if not is_suspended:
+    print("Account is active and eligible to participate.")
+
+# Combining all three together
+# Priority order: 'not' evaluates first, then 'and', then 'or'
+if (age >= 18 and has_id) and not is_suspended:
+    print("Access fully granted!")#arthimethic operations
+
+#logical operator
+age =25
+citizen = True
+
+print(age>=18 and citizen == True)
+age = 16
+citizen = True
+
+print(age>=18 and citizen == True)
+
+has_card = False
+has_cash = True
+
+print(has_card or has_cash)
+
+is_logged_in = True
+
+print(not is_logged_in)
+
+#atm eligibility checker
+balance = 10000
+withdraw = 5000
+
+print(withdraw > 0 and withdraw <= balance)
+
+#student scholarship eligibility checker
+marks = float(input("Enter  marks: "))
+attendance = float(input("Enter attendance : "))
+
+eligible = marks >= 85 and attendance >= 75
+print("scholarship eligibility: ", eligible)
+
+#identity operators
+a = None
+
+print(a is None)
+print(a is not None)
+
+#bitwise operators
+a = 5
+b = 3
+
+print(a & b)  
+print(a | b)
+print(a ^ b)
+
+#electric city bill calculator
+units = int(input("Enter electricity units : "))
+
+rate = 6
+
+bill = units * rate
+
+print("Electricity Bill: ", bill)
+
+#travel expence calculator
+travel = float(input(" Travel expence: "))
+food = float(input("Food expence: "))
+hotel = float(input("Hotel expence: "))
+
+total = travel + food + hotel
+
+print("Total Expense: ", total)
